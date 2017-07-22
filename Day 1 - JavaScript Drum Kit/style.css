@@ -19,18 +19,19 @@ body, html {
 
 .key {
     border-radius: .5rem;
-    padding: 1rem .5rem;
+    padding: .8rem .4rem;
     margin: 1rem;
-    color: #fff;
-    width: 10rem;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    width: 5rem;
     text-align: center;
     transition: .1s;
-    text-shadow: 0 0 .5rem black;
+    /* text-shadow: 0 0 .5rem black; */
 }
 
 .playing {
     transform: scale(1.1);
-    text-shadow: 0 0 .5rem yellow;
 }
 
 kbd {
@@ -41,5 +42,5 @@ kbd {
 .sound {
     text-transform: uppercase;
     letter-spacing: .1rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
