@@ -1,0 +1,40 @@
+* {
+    font-family: 'Zilla Slab', serif;
+}
+html {
+    background: url('background.jpg') fixed center no-repeat;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.keysContainer {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    border-radius: .5rem;
+    padding: 1rem .5rem;
+    margin: 1rem;
+    color: #fff;
+    width: 10rem;
+    text-align: center;
+    transition: .3s;
+    text-shadow: 0 0 .5rem black;
+}
+
+kbd {
+    display: block;
+    font-size: 2rem;
+}
+
+.sound {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
