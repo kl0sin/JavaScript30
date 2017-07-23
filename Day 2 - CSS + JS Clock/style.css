@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    height: 100vh;
     background: -moz-linear-gradient(90deg, rgba(102, 207, 255, 1) 0%, rgba(25, 41, 128, 1) 100%);
     /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(25, 41, 128, 1)), color-stop(100%, rgba(102, 207, 255, 1)));
@@ -18,9 +18,10 @@ html {
     height: 300px;
     width: 300px;
     border: 1rem solid #fff; 
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
-    margin: calc(50% - 150px) auto;
+    margin: 0 auto;
+    margin-top: calc(50vh - 150px);
     position: relative;
     box-sizing: border-box;
 }
@@ -31,13 +32,27 @@ html {
     position: relative;
 }
 
-.hand  {
+.sec {
     width: 50%;
-    height: 6px;
-    background: #111;
+    height: 3px;
+}
+
+.min {
+    width: 45%;
+    height: 5px;
+    margin-left: 5%;
+}
+
+.hour {
+    width: 35%;
+    height: 5px;
+    margin-left: 15%;
+}
+
+.hand  {
     position: absolute;
-    top: 50%;
+    top: 50%; 
+    background-color: #fff;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: .1s;
 }
