@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Playing with CSS Variables and JS</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
+
 <body>
 
-    <script src="srcipt.js"></script>
+    <h1>Box Shadow - Update CSS Variables with JS</h1>
+
+    <div class="box">
+
+    </div>
+    <div class="controlers-container">
+        <p><span>Horizontal Length</span>
+            <input id="hlength" type="range" name="hlength" min="0" max="200" value="15" data-sizing="px"></p>
+        <p><span>Vertical Length</span>
+            <input id="vlength" type="range" name="vlength" min="0" max="200" value="15" data-sizing="px"></p>
+        <p><span>Blur</span>
+            <input id="blur" type="range" name="blur" min="0" max="200" value="5" data-sizing="px"></p>
+        <p><span>Spread</span>
+            <input id="spread" type="range" name="spread" min="0" max="200" value="5" data-sizing="px"></p>
+        <p><span>Color</span>
+            <input id="scolor" type="color" name="scolor" value="#000000"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
