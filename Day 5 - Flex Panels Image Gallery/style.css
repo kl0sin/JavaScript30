@@ -39,6 +39,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
 }
 .panel > *:first-child {
     transform: translateY(-100%);
@@ -51,6 +54,9 @@ body {
 }
 .panel.open-active > *:last-child {
     transform: translateY(0);
+}
+.panel.open-active > *:nth-child(2) {
+    font-size: 1.5em;
 }
 .panel1 {
     background-image: url(images/image_1.jpg);
