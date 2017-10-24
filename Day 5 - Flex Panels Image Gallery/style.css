@@ -26,7 +26,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    transition: .5s;
+    transition: ease-in-out .5s;
 }
 .panel.open {
     flex: 5;
@@ -34,7 +34,7 @@ body {
 .panel > * {
     margin: 0;
     width: 100%;
-    transition: transform .5s;
+    transition: ease-in .5s;
     flex: 1 0 auto;
     display: flex;
     justify-content: center;

@@ -1,14 +1,13 @@
 const panels = document.querySelectorAll('.panel');
 
 function toggleOpen(e) {
-    panels.forEach(panel => panel.classList.remove('open'));
-    this.classList.toggle('open');
-}
-function toggleActive(e) {
-    if(e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
-    }
+    const selectPanel = this.classList;
+    if (selectPanel.contains('open' || 'open-active')) {
+        selectPanel.remove('open', 'open-active');
+    } else {
+        panels.forEach(panel => panel.classList.remove('open', 'open-active'));
+        selectPanel.add('open', 'open-active');
+    };
 }
 
 panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
