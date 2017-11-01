@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100vh;
+    background: -moz-linear-gradient(90deg, rgba(102, 207, 255, 1) 0%, rgba(25, 41, 128, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(25, 41, 128, 1)), color-stop(100%, rgba(102, 207, 255, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(102, 207, 255, 1) 0%, rgba(25, 41, 128, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(102, 207, 255, 1) 0%, rgba(25, 41, 128, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(102, 207, 255, 1) 0%, rgba(25, 41, 128, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(0deg, rgba(102, 207, 255, 1) 0%, rgba(25, 41, 128, 1) 100%);
+    /* w3c */
+}
+.content {
+    margin: 50px auto;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 15px;
+}
+.align-left {
+    float: left;
+    margin: 15px 15px 15px 0;
+}
+.slide-in {
+    opacity: 0;
+    transition: .5s;
+}
+.align-right {
+    float: right;
+    margin: 15px 0 15px 15px;
+}
+.align-left.slide-in {
+    transform:translateX(-30%) scale(0.95);
+}
+.align-right.slide-in {
+    transform:translateX(30%) scale(0.95);
+}
+.slide-in.active {
+    opacity:1;
+    transform:translateX(0%) scale(1);
+}
